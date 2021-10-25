@@ -1,0 +1,8 @@
+package com.example.thymeleafprac.repository;
+
+import com.example.thymeleafprac.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+}
