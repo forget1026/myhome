@@ -37,7 +37,7 @@ public class BoardApiController {
         return boardRepository.findById(id).orElse(null);
     }
 
-    @PutMapping("/boards/{id")
+    @PutMapping("/boards/{id}")
     Board replaceBoard(@RequestBody Board newBoard, @PathVariable Long id) {
         return boardRepository.findById(id)
                 .map(board -> {
